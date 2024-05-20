@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.5.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 851 315" style="enable-background:new 0 0 851 315;" xml:space="preserve">
+<g id="BACKGROUND">
+	<g>
+		<defs>
+			<rect id="SVGID_1_" x="0" y="0" width="851" height="315"/>
+		</defs>
+		<clipPath id="SVGID_00000146481523421625129700000012932718256513852601_">
+			<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+		</clipPath>
+		
+			<rect x="-47.979" y="-58.19" style="clip-path:url(#SVGID_00000146481523421625129700000012932718256513852601_);fill:#CCCCCC;" width="921.139" height="414.309"/>
+	</g>
+</g>
+<g id="OBJECTS">
+	<g>
+		<polygon style="opacity:0.2;fill:#181B5B;" points="465.552,315 589,0 0,0 0,315 		"/>
+		<polygon style="opacity:0.5;fill:#181B5B;" points="465.552,315 0,0 0,315 		"/>
+		<g>
+			<polygon style="opacity:0.8;fill:#181B5B;" points="625,39 466,39 432,-1 649,-1 			"/>
+			<g>
+				<polygon style="fill:#181B5B;" points="193,59 0,59 0,19 217,19 				"/>
+				<g>
+					<text transform="matrix(1 0 0 1 31.2896 44.5405)"><tspan x="0" y="0" style="fill:#FFFFFF; font-family:'Gilroy-ExtraBold'; font-size:16.8692px; letter-spacing:3;">LOGO</tspan><tspan x="55.601" y="0" style="fill:#FFFFFF; font-family:'Gilroy-Light'; font-size:16.8692px; letter-spacing:3;">COMPANY</tspan></text>
+				</g>
+			</g>
+			<g>
+				<polygon style="fill:#181B5B;" points="565,143 851,143 851,183 541,183 				"/>
+				<g>
+					
+						<text transform="matrix(1 0 0 1 632.9023 168.8447)" style="fill:#FFFFFF; font-family:'Gilroy-Light'; font-size:18.7736px; letter-spacing:3;">+98 6985 254 274</text>
+				</g>
+			</g>
+			<g>
+				<rect x="0" y="183" style="opacity:0.8;fill:#181B5B;" width="851" height="132"/>
+				<g>
+					<text transform="matrix(1 0 0 1 270.4775 224.0332)"><tspan x="0" y="0" style="fill:#FFFFFF; font-family:'Gilroy-Light'; font-size:26.2506px; letter-spacing:5;">DIGITAL</tspan><tspan x="125.241" y="0" style="fill:#FFFFFF; font-family:'Gilroy-Light'; font-size:26.2506px;"> </tspan><tspan x="130.806" y="0" style="fill:#FFFFFF; font-family:'Gilroy-ExtraBold'; font-size:26.2506px; letter-spacing:5;">MARKETING</tspan></text>
+					
+						<text transform="matrix(1 0 0 1 355.3228 241.9336)" style="fill:#FFFFFF; font-family:'Montserrat-Light'; font-size:7.9123px; letter-spacing:1;">IMPROVE YOUR COMPANY</text>
+				</g>
+				<g>
+					<g>
+						<path style="fill:#FFFFFF;" d="M719.522,284.992c-2.551,0-4.619,2.068-4.619,4.618c0,2.551,4.619,8.749,4.619,8.749
+							s4.619-6.198,4.619-8.749C724.141,287.06,722.073,284.992,719.522,284.992z M719.522,291.81c-1.215,0-2.2-0.985-2.2-2.2
+							c0-1.215,0.985-2.2,2.2-2.2c1.215,0,2.2,0.985,2.2,2.2C721.722,290.826,720.737,291.81,719.522,291.81z"/>
+						
+							<text transform="matrix(1 0 0 1 729.3408 293.6729)" style="fill:#FFFFFF; font-family:'Montserrat-Light'; font-size:9.2493px;">lorem ipsum street 28</text>
+					</g>
+				</g>
+				<rect x="184.5" y="276.245" style="fill:none;" width="482" height="33.755"/>
+				<text transform="matrix(1 0 0 1 186.6152 284.0098)"><tspan x="0" y="0" style="fill:#FCFBFC; font-family:'Montserrat-Light'; font-size:10.4634px;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod </tspan><tspan x="169.734" y="12.556" style="fill:#FCFBFC; font-family:'Montserrat-Light'; font-size:10.4634px;">tincidunt ut laoreet dolore.</tspan></text>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>
