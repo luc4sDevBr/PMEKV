@@ -28,22 +28,34 @@ export default function Home() {
         <main className="grid grid-rows-14 w-full h-screen overflow-hidden">
 
 
-            <header className="row-span-1 px-2 bg-Mevkgreen  flex space-x-5 ">
+            <header className="row-span-1 px-2 bg-Mevkgreen  flex space-x-5 shadow-lg">
                 <menu className="flex-2 flex ">
 
                     <Button>
-                        <Link href="/"><ArrowLeft color="#ffffff" /></Link>
+                        <Link href="/"><ArrowLeft color="#dbbc65" /></Link>
                     </Button>
 
                 </menu>
-                <div className="flex-1 flex justify-center"><Image src='/cat.png' width={50} height={50} alt="Client Icon" /></div>
+                <div className="flex-1 flex justify-center"><Image src='/4.png' width={50} height={50} alt="Client Icon" /></div>
                 <div className="flex-2 flex"></div>
 
             </header>
 
-            <section className="w-full h-full row-span-12 bg-neutral-800 overflow-auto scrollbar-thin scrollbar-thumb-slate-400 scrollbar-track-slate-200">
+            <section className="w-full h-full row-span-12 bg-Mevk-darkgreen overflow-auto scrollbar-thin scrollbar-thumb-slate-400 scrollbar-track-slate-200">
                 <div className=" w-full h-auto ">
-                    <Image className=" w-full h-niceVh rounded-b-nice drop-shadow-lg" src="/cat-banner.jpg" width={500} height={500} alt="Client Icon" />
+                    <Image className=" w-full h-niceVh rounded-b-nice drop-shadow-lg" src="/banner.jpg" width={1000} height={1000} alt="Client Icon" />
+                </div>
+
+                <div className="w-full h-auto bg-slate-200 flex flex-col items-center gap-10">
+                    <BuildTextBox
+                        content=
+                        {textContentItens}
+                        titleONTENT=
+                        {"Why do we use it?"} />
+                </div>
+
+                <div className=" w-full h-auto ">
+                    <Image className=" w-full h-niceVh rounded-b-nice drop-shadow-lg" src="/banner.jpg" width={1000} height={1000} alt="Client Icon" />
                 </div>
 
                 <div className="w-full h-auto bg-slate-200 flex flex-col items-center gap-10">
@@ -54,6 +66,7 @@ export default function Home() {
                         {"Why do we use it?"} />
                 </div>
             </section>
+            
         </main>
     );
 }

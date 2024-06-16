@@ -47,11 +47,7 @@ export default function Home() {
       <section className={!slidebar ? "w-full h-full row-span-12 bg-zinc-950 overflow-auto scrollbar-thin scrollbar-thumb-slate-400 scrollbar-track-slate-200 " : "w-full h-full row-span-12  bg-black overflow-auto scrollbar-thin scrollbar-thumb-slate-400 scrollbar-track-slate-200 blur-sm"}>
         
           <div className=" flex-3 w-full h-full flex items-center justify-center bg-black ">
-            
-
               <Image src='/Home2.png' width={3000} height={300} alt="Client Icon" className=" w-full h-full" /> 
-
-            
           </div>
       
 
