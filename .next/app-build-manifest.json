@@ -11,15 +11,20 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
+    "/lista/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/lista/page.js"
+    ],
     "/inicio/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/inicio/page.js"
     ],
-    "/tabela/page": [
+    "/cards/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/tabela/page.js"
+      "static/chunks/app/cards/page.js"
     ]
   }
 }

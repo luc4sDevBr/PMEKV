@@ -1,4 +1,4 @@
-// File: C:\Users\lukas\OneDrive\Documentos\Projects\nutri-smart\nutri-smart\src\app\inicio\page.tsx
+// File: C:\Users\CADASTRO UNICO\Documents\LUCAS\NEXT PROJECTS\MEKV\PMEKV\src\app\inicio\page.tsx
 import * as entry from '../../../../src/app/inicio/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

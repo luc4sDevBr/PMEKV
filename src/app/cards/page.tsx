@@ -60,7 +60,7 @@ export default function Home() {
                     return response.data.items[0];
                 });
 
-                const videosData: any = await Promise.all(videoDataPromises);
+                const videosData:  any= await Promise.all(videoDataPromises);
                 setVideos(videosData);
             } catch (error) {
                 console.error("Erro ao buscar dados dos vídeos:", error);
@@ -69,6 +69,7 @@ export default function Home() {
 
         fetchVideosData();
     }, []);
+    
     const formatDuration = (duration:any) => {
         // Função para formatar a duração em formato 00:00:00
         const match = duration.match(/PT(\d+H)?(\d+M)?(\d+S)?/);
