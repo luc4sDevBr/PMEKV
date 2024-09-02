@@ -1,9 +1,9 @@
 {
   "pages": {
-    "/page": [
+    "/cards/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
+      "static/chunks/app/cards/page.js"
     ],
     "/layout": [
       "static/chunks/webpack.js",
@@ -11,20 +11,20 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/lista/page": [
+    "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/lista/page.js"
+      "static/chunks/app/page.js"
     ],
-    "/inicio/page": [
+    "/receita/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/inicio/page.js"
+      "static/chunks/app/receita/page.js"
     ],
-    "/cards/page": [
+    "/receita/receitaAtual/[receitaAtualId]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/cards/page.js"
+      "static/chunks/app/receita/receitaAtual/[receitaAtualId]/page.js"
     ]
   }
 }

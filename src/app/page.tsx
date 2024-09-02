@@ -65,7 +65,7 @@ export default function Home() {
                 <Image className=" rounded-s-full w-3/5 h-full  text-white text-center flex items-center justify-center" src={"/card1.jpg"} width={1000} height={500} alt="img" />
               </Button>
             </Link>
-            <Link className="transition duration-700 ease-in-out rounded-3xl w-5/6 h-80  bg-gradient-to-tr from-Mevkgreen  to-white shadow-lg text-center flex justify-evenly transform hover:-translate-y-1 hover:scale-105" href={"/lista"}>
+            <Link className="transition duration-700 ease-in-out rounded-3xl w-5/6 h-80  bg-gradient-to-tr from-Mevkgreen  to-white shadow-lg text-center flex justify-evenly transform hover:-translate-y-1 hover:scale-105" href={"/receita"}>
               <Button className="rounded-3xl w-full h-80 bg-gradient-to-tr from-Mevkgreen via-Mevkgreen to-white  text-center flex items-center justify-between p-0 m-0">
                 <h1 className="drop-shadow-lg text-6xl font-semibold text-white w-full"> Receita detóx </h1>
                 <Image className=" rounded-s-full w-3/5 h-full  text-white text-center flex items-center justify-center" src={"/card1.jpg"} width={1000} height={500} alt="img" />
