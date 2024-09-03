@@ -80,7 +80,7 @@ export default function Home() {
         return `${hours.toString().padStart(2, "0")}:${minutes.toString().padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
     };
     const renderVideos = () => {
-        return videos.map((video, index) => (
+        return videos.map((video:any, index) => (
             <Link className="" href={`/cards/videos/${video.id}`}>
                 <div key={index}>
                     <BuildCard
