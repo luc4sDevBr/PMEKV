@@ -8,21 +8,21 @@ import YouTube from "react-youtube";
 import axios from "axios";
 import { Interface } from "readline";
 
-interface props{
-    params:{videoid: string}
+interface props {
+    params: { videoid: string }
 }
 
 
-export default function Home({params}:props) {
+export default function Home({ params }: props) {
     //const [liked, setLiked] = useState(false);
-    const [iframeLoaded, setIframeLoaded] =  React.useState(false);
+    const [iframeLoaded, setIframeLoaded] = React.useState(false);
     const [videoTitle, setVideoTitle] = React.useState("");
     const [videoDescription, setvideoDescription] = React.useState("");
     const [videoDuration, setVideoDutation] = React.useState("");
     const youtubePlayerRef = useRef(null);
 
 
-    const formatDuration = (duration:any) => {
+    const formatDuration = (duration: any) => {
         // Função para formatar a duração em formato 00:00:00
         const match = duration.match(/PT(\d+H)?(\d+M)?(\d+S)?/);
         const hours = parseInt(match[1]) || 0;
@@ -46,70 +46,73 @@ export default function Home({params}:props) {
             setIframeLoaded(true);
         }
 
-          // Obter o ID do vídeo
-      const videoId = player.getVideoData().video_id;
+        // Obter o ID do vídeo
+        const videoId = player.getVideoData().video_id;
 
-      // Fazer uma solicitação HTTP para a API do YouTube para obter informações do vídeo
-      axios.get(`https://www.googleapis.com/youtube/v3/videos?id=${params.videoid}&part=snippet,contentDetails&key=AIzaSyBSdtLrgAkVPotIjYnBGhyz3xWpFoj6dbc`)
-        .then((response) => {
-          if (response.data.items && response.data.items.length > 0) {
-            const title = response.data.items[0].snippet.title;
-            const description = response.data.items[0].snippet.description;
-            const duration = formatDuration(response.data.items[0].contentDetails.duration); 
+        // Fazer uma solicitação HTTP para a API do YouTube para obter informações do vídeo
+        axios.get(`https://www.googleapis.com/youtube/v3/videos?id=${params.videoid}&part=snippet,contentDetails&key=AIzaSyBSdtLrgAkVPotIjYnBGhyz3xWpFoj6dbc`)
+            .then((response) => {
+                if (response.data.items && response.data.items.length > 0) {
+                    const title = response.data.items[0].snippet.title;
+                    const description = response.data.items[0].snippet.description;
+                    const duration = formatDuration(response.data.items[0].contentDetails.duration);
 
-            setVideoDutation(duration)
-            setvideoDescription(description)
-            setVideoTitle(title);
-          }
-        })
-        .catch((error) => {
-          console.error("Erro ao obter informações do vídeo:", error);
-        });
+                    setVideoDutation(duration)
+                    setvideoDescription(description)
+                    setVideoTitle(title);
+                }
+            })
+            .catch((error) => {
+                console.error("Erro ao obter informações do vídeo:", error);
+            });
     }
-    
+
     //drop-shadow-sm
     return (
 
         <main className="grid grid-rows-14 w-full h-screen overflow-hidden">
 
 
-            <header className="row-span-1 px-2 bg-gradient-to-tr from-slate-400 to-slate-700  flex space-x-5 ">
-                <menu className="flex-2 flex ">
+            <header className="row-span-1 px-2 bg-Mevkgreen flex space-x-6 shadow-lg">
+                <menu className="flex-1 flex ">
 
                     <Button>
-                        <Link href="/cards"><ArrowLeft color="#e5e9cc" /></Link>
+                        <Link href="/exercicios"><ArrowLeft color="#dbbc65" /></Link>
                     </Button>
 
                 </menu>
-                <div className="flex-1 flex justify-center"><Image src='/cat.png' width={50} height={50} alt="Client Icon" /></div>
-                <div className="flex-2 flex"></div>
+                <div className="flex-4 flex justify-center"><Image src='/4.png' width={50} height={50} alt="Client Icon" /></div>
+                <div className="flex-1 flex"></div>
 
             </header>
 
-            <section className="w-full h-full row-span-12  bg-slate-200 overflow-auto scrollbar-thin scrollbar-thumb-slate-400 scrollbar-track-slate-200 pb-10">
-                <div id="frame" className={iframeLoaded ?"mt-10 mb-10 w-full h-auto bg-slate-200 flex flex-col items-center gap-10":"hidden"}>
+            <section className="w-full h-full row-span-12  bg-Mevk-darkgreen overflow-auto scrollbar-thin scrollbar-thumb-slate-400 scrollbar-track-slate-200">
+                <div id="frame" className={iframeLoaded ? "mt-10 mb-10 w-full h-auto bg-Mevk-darkgreen flex flex-col items-center gap-10" : "hidden"}>
 
                     <div className="youtube-container w-3/5 h-full rounded-lg" >
                         <YouTube className=" " videoId={params.videoid} onReady={onReady} />
 
-                        <div className="pb-0 pt-2 px-4 flex-col items-start bg-slate-100 text-slate-500 border shadow-md my-5 p-5 flex">
-                            <p className="text-tiny uppercase font-bold text-slate-500">{videoTitle}</p>
-                            <h4 className="font-bold text-large text-slate-500">{videoDuration+" min"}</h4>
-                            <small className="text-default-500 text-slate-500 p-5 text-left">{videoDescription}</small>
-                            
+                        <div className="pb-0 pt-2 px-4 flex-col items-start bg-Mevkgreen text-slate-500 shadow-md my-5 p-5 flex">
+                            <p className="text-tiny uppercase font-bold text-Mevkgolden">{videoTitle}</p>
+                            <h4 className="font-bold text-large text-Mevkgolden">{videoDuration + " min"}</h4>
+                            <small className="text-default-500 text-Mevkligth p-5 text-left">{videoDescription}</small>
+
                         </div>
                     </div>
 
                 </div>
                 <div className=" w-full ">
-                    
+
                 </div>
 
-
+                <footer className=" bg-Mevkgreen w-full h-52 text-center flex-col flex items-center justify-center drop-shadow-lg gap-2">
+                    <Image src='/4.png' width={70} height={70} alt="Client Icon" />
+                    <h1 className="drop-shadow-lg text-4xl font-thin text-NewPalet-yellow"> Desafio MEVK </h1>
+                </footer>
             </section>
         </main>
     );
-//style={{ display: iframeLoaded ? "block" : "none" }
+    //style={{ display: iframeLoaded ? "block" : "none" }
 
 }
 

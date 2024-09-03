@@ -32,7 +32,7 @@ export default function listaDetoxWrapper() {
     <ListboxWrapper>
       <Listbox
         topContent={"Receitas Detóx"}
-        className=" p-0 w-full h-full text-2xl font-semibold text-left align-middle  text-white mt-10 mb-10"
+        className=" p-0 w-full h-full text-2xl font-semibold text-left align-middle text-Mevkgolden mt-10 mb-10"
         defaultSelectedKeys={["1"]}
         items={users}
         label="Assigned to"
@@ -49,8 +49,8 @@ export default function listaDetoxWrapper() {
                 <div className="flex w-full h-full items-center  bg-gradient-to-tr from-Mevk-darkgreen via-Mevkgreen to-emerald-50 p-1 gap-5">
                   <Avatar alt={item.name} className="flex-shrink-0" size="sm" src={item.avatar} />
                   <div className="flex flex-col">
-                    <span className="drop-shadow-lg text-2xl font-semibold  text-white w-full">{item.name}</span>
-                    <span className=" font-thin text-base  text-white ">{item.preview}</span>
+                    <span className="drop-shadow-lg text-2xl font-semibold text-Mevkgolden w-full">{item.name}</span>
+                    <span className=" font-thin text-base text-Mevkligth ">{item.preview}</span>
                   </div>
                 </div>
               </Link>

@@ -60,7 +60,7 @@ export default function Home() {
                     return response.data.items[0];
                 });
 
-                const videosData:  any= await Promise.all(videoDataPromises);
+                const videosData: any = await Promise.all(videoDataPromises);
                 setVideos(videosData);
             } catch (error) {
                 console.error("Erro ao buscar dados dos vídeos:", error);
@@ -69,8 +69,8 @@ export default function Home() {
 
         fetchVideosData();
     }, []);
-    
-    const formatDuration = (duration:any) => {
+
+    const formatDuration = (duration: any) => {
         // Função para formatar a duração em formato 00:00:00
         const match = duration.match(/PT(\d+H)?(\d+M)?(\d+S)?/);
         const hours = parseInt(match[1]) || 0;
@@ -97,24 +97,28 @@ export default function Home() {
 
     return (
         <main className="w-full h-screen overflow-hidden">
-              <header className="row-span-1 px-2 bg-gradient-to-tr from-slate-400 to-slate-700  flex space-x-5 ">
-                <menu className="flex-2 flex ">
+            <header className="row-span-1 px-2 bg-Mevkgreen flex space-x-6 shadow-lg">
+                <menu className="flex-1 flex ">
 
                     <Button>
-                        <Link href="/"><ArrowLeft color="#ffffff" /></Link>
+                        <Link href="/exercicios"><ArrowLeft color="#dbbc65" /></Link>
                     </Button>
 
                 </menu>
-                <div className="flex-1 flex justify-center"><Image src='/cat.png' width={50} height={50} alt="Client Icon" /></div>
-                <div className="flex-2 flex"></div>
+                <div className="flex-4 flex justify-center"><Image src='/4.png' width={50} height={50} alt="Client Icon" /></div>
+                <div className="flex-1 flex"></div>
 
             </header>
 
-            <section className="w-full h-full row-span-1 bg-slate-200 overflow-auto scrollbar-thin scrollbar-thumb-slate-400 scrollbar-track-slate-200 pb-10">
-                <div className="p-10 w-auto h-auto grid grid-cols-4 bg-slate-200 items-center gap-10">
+            <section className="w-full h-full row-span-1 bg-Mevk-darkgreen overflow-auto scrollbar-thin scrollbar-thumb-slate-400 scrollbar-track-slate-200 pb-10">
+                <div className="p-10 w-auto h-auto grid grid-cols-4 bg-Mevk-darkgreen items-center gap-10">
                     {renderVideos()}
                 </div>
                 <div className="w-full h-auto">{/* Outro conteúdo aqui */}</div>
+                <footer className=" bg-Mevkgreen w-full h-52 text-center flex-col flex items-center justify-center drop-shadow-lg gap-2">
+                    <Image src='/4.png' width={70} height={70} alt="Client Icon" />
+                    <h1 className="drop-shadow-lg text-4xl font-thin text-NewPalet-yellow"> Desafio MEVK </h1>
+                </footer>
             </section>
         </main>
     );

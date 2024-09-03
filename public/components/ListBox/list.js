@@ -20,17 +20,17 @@ export default function BuildList() {
     {
       key: "2",
       label: "Receita detóx",
-      link: "/cards"
+      link: "/receita"
     },
     {
       key: "4",
       label: "Fórmulas de manipulados",
-      link: "/cards"
+      link: "/tabela"
     },
     {
       key: "5",
       label: "Exercício-se",
-      link: "/cards"
+      link: "/exercicios"
     }
   ];
 

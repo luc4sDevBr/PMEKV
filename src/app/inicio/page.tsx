@@ -65,6 +65,10 @@ export default function Home() {
                         titleONTENT=
                         {"Why do we use it?"} />
                 </div>
+                <footer className=" bg-Mevkgreen w-full h-52 text-center flex-col flex items-center justify-center drop-shadow-lg gap-2">
+                    <Image src='/4.png' width={70} height={70} alt="Client Icon" />
+                    <h1 className="drop-shadow-lg text-4xl font-thin text-NewPalet-yellow"> Desafio MEVK </h1>
+                </footer>
             </section>
             
         </main>
