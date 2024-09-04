@@ -1,3 +1,4 @@
 # Arquivo específico a ser ignorado
 #next-swc.win32-x64-msvc
 .next
+node_modules
