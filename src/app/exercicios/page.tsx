@@ -38,7 +38,7 @@ export default function Home() {
                         </div>
                     </Link>
 
-                    <Link className="" href={`/cards`}>
+                    <Link className="" href={`/gym`}>
                         <div key={1}>
                             <BuildCard
                                 videoTitle={"Exercite-se na academia!"}
