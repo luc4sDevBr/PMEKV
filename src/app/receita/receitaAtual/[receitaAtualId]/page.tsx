@@ -7,29 +7,32 @@ import { RadioGroup, Radio } from "@nextui-org/radio";
 import Image from "next/image";
 import { users } from '../../../../../public/components/ListaDetox/data';
 
-interface props{
-    params:{receitaAtualId:number}
+interface props {
+    params: { receitaAtualId: number }
 }
 
 const reviews = { href: '#', average: 4, totalCount: 117 }
 
-export default function Example({params}:props) {
+export default function Example({ params }: props) {
 
 
     return (
         <main className="grid grid-rows-14 w-full h-screen overflow-hidden" >
-            <header className="row-span-1 px-2 bg-Mevkgreen flex space-x-6 shadow-lg">
-                <menu className="flex-1 flex ">
-
+            <header className="row-span-1 h-[10vh] relative px-2 bg-Mevkgreen flex items-center space-x-5 shadow-lg">
+                <menu className="flex-2 flex items-center z-10">
                     <Button>
-                        <Link href="/receita"><ArrowLeft color="#dbbc65" /></Link>
+                        <Link href="/"><ArrowLeft color="#dbbc65" /></Link>
                     </Button>
-
                 </menu>
-                <div className="flex-4 flex justify-center"><Image src='/4.png' width={50} height={50} alt="Client Icon" /></div>
-                <div className="flex-1 flex"></div>
 
+                {/* Centralizar a imagem */}
+                <div className="absolute inset-0 flex justify-center items-center">
+                    <Image src='/4.png' width={50} height={50} alt="Client Icon" className="max-w-full h-auto" />
+                </div>
+
+                <div className="flex-2 flex z-10"></div>
             </header>
+
             <section className="w-full h-full row-span-12 bg-Mevk-darkgreen overflow-auto scrollbar-thin scrollbar-thumb-slate-400 scrollbar-track-slate-200">
                 <div className="pt-6">
 
@@ -85,7 +88,7 @@ export default function Example({params}:props) {
                     <h1 className="drop-shadow-lg text-4xl font-thin text-NewPalet-yellow"> Desafio MEVK </h1>
                 </footer>
             </section>
-          
+
         </main>
 
 

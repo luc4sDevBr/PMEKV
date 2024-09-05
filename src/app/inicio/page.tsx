@@ -34,7 +34,7 @@ export default function Home() {
 
                 {/* Centralizar a imagem */}
                 <div className="absolute inset-0 flex justify-center items-center">
-                    <Image src='/4.png' width={50} height={50} alt="Client Icon" className="max-w-full h-full" />
+                    <Image src='/4.png' width={50} height={50} alt="Client Icon" className="max-w-full h-auto" />
                 </div>
 
                 <div className="flex-2 flex z-10"></div>
@@ -42,7 +42,7 @@ export default function Home() {
 
             <section className="w-full h-full row-span-12 bg-Mevk-darkgreen overflow-auto scrollbar-thin scrollbar-thumb-slate-400 scrollbar-track-slate-200">
                 <div className="w-full h-auto">
-                    <Image className="w-full h-[40vh] sm:h-[50vh] lg:h-[100vh] object-cover rounded-b-nice drop-shadow-lg" src="/banner.jpg" width={1000} height={1000} alt="Client Icon" />
+                    <Image className="w-full h-[40vh] sm:h-[50vh] lg:h-full object-cover rounded-b-nice drop-shadow-lg" src="/banner.jpg" width={1366} height={768} alt="Client Icon" />
                 </div>
 
                 <div className="w-full h-auto bg-Mevk-darkgreen flex flex-col items-center gap-6 p-4 sm:p-6 lg:p-8">
@@ -53,7 +53,7 @@ export default function Home() {
                 </div>
 
                 <div className="w-full h-auto">
-                    <Image className="w-full h-[40vh] sm:h-[50vh] lg:h-[100vh] object-cover rounded-b-nice drop-shadow-lg" src="/banner.jpg" width={1000} height={1000} alt="Client Icon" />
+                    <Image className="w-full h-[40vh] sm:h-[50vh] lg:h-full object-cover rounded-b-nice drop-shadow-lg" src="/banner.jpg" width={1366} height={768} alt="Client Icon" />
                 </div>
 
                 <div className="w-full h-auto bg-Mevk-darkgreen flex flex-col items-center gap-6 p-4 sm:p-6 lg:p-8">

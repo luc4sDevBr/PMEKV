@@ -9,11 +9,11 @@ export const users = [
     team: "Management",
     status: "active",
     age: "29",
-    avatar: "https://d2u8k2ocievbld.cloudfront.net/memojis/male/1.png",
+    avatar: "/sucoverde.jpg",
     preview: "Ingredientes: 1 folha de couve | 1 maçã verde | Suco de 1 limão...",
     images: [
       {
-        src: 'https://tailwindui.com/img/ecommerce-images/product-page-02-secondary-product-shot.jpg',
+        src: '/cucoverde.jpg',
         alt: 'Two each of gray, white, and black shirts laying flat.',
       },
       {
@@ -51,7 +51,7 @@ export const users = [
     team: "Development",
     status: "paused",
     age: "25",
-    avatar: "https://d2u8k2ocievbld.cloudfront.net/memojis/female/1.png",
+    avatar: "/sucovermelho.jpg",
     preview: "Ingredientes: 1 xícara de morangos | 1/2 xícara de framboesas | 1/2 xícara de mirtilos...",
     images: [
       {
@@ -91,7 +91,7 @@ export const users = [
     team: "Development",
     status: "active",
     age: "22",
-    avatar: "https://d2u8k2ocievbld.cloudfront.net/memojis/female/2.png",
+    avatar: "/aguaverde.jpg",
     preview: "Ingredientes: 1 litro de água | 1 limão cortado em rodelas | 1/2 pepi...",
     images: [
       {
@@ -129,7 +129,7 @@ export const users = [
     team: "Marketing",
     status: "vacation",
     age: "28",
-    avatar: "https://d2u8k2ocievbld.cloudfront.net/memojis/male/2.png",
+    avatar: "/saladaverde.jpg",
     preview: "Ingredientes: 1 xícara de quinoa cozida | 1 pepino picado | 1 de ...",
     images: [
       {
