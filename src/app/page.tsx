@@ -12,25 +12,50 @@ export default function Home() {
   const [slidebar, setSliderbar] = useState(false);
   const [imageSrc, setImageSrc] = useState('/Home2.png');
 
-  const toggleCollapsed = () => {
+  const toggleCollapsed: any = () => {
     setCollapsed(!collapsed);
     setSliderbar(!slidebar);
   };
 
+  useEffect(() => {
+    const handleResize: any = () => {
+      // Verifica o tamanho da tela e atualiza a imagem conforme necessário
+      if (window.innerWidth <= 768) {
+        setImageSrc('/HomeMB.png');  // Imagem para dispositivos móveis
+      } else {
+        setImageSrc('/Home2.png');  // Imagem para telas maiores
+      }
+    };
+
+    // Chama a função quando o componente é montado e quando a janela é redimensionada
+    window.addEventListener('resize', handleResize);
+    handleResize(); // Executa imediatamente na montagem
+
+    // Remove o event listener quando o componente é desmontado
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
-    <main onMouseDown={toggleCollapsed} className="grid grid-rows-14 w-full h-screen overflow-hidden bg-Mevkgreen">
+    <main onMouseDown={!slidebar ? console.log("Olá") : toggleCollapsed} className="grid grid-rows-14 w-full h-screen overflow-hidden bg-Mevkgreen">
       {BuildMenu && <BuildMenu active={setSliderbar} boolactive={slidebar} />}
-      <menu className="z-50 absolute">
-        <Button onClick={toggleCollapsed}>
-          {collapsed ? <X color="#dbbc65" /> : <AlignJustify color="#dbbc65" />}
-        </Button>
-      </menu>
-      <header className="flex items-center justify-center from-Mevkgreen to-black">
-        <div><Image src='/4.png' width={50} height={50} alt="Client Icon" /></div>
+
+      <header className="row-span-1 h-[10vh] relative px-2 bg-Mevkgreen flex items-center space-x-5 shadow-lg">
+        <menu className="flex-2 flex items-center z-50">
+          <Button onClick={toggleCollapsed}>
+            {collapsed ? <X color="#dbbc65" /> : <AlignJustify color="#dbbc65" />}
+          </Button>
+        </menu>
+        <div className="absolute inset-0 flex justify-center items-center"><Image src='/4.png' width={50} height={50} alt="Client Icon" /></div>
+        <div className="flex-2 flex z-50"></div>
       </header>
       <section className={`${!slidebar ? "w-full h-full row-span-12 bg-zinc-950 overflow-auto" : "w-full h-full row-span-12 bg-black overflow-auto blur-sm pointer-events-none"} scrollbar-thin scrollbar-thumb-slate-400 scrollbar-track-slate-200`}>
         <div className="flex w-auto h-auto items-center justify-center bg-black">
-          <Image src={'/HomeMB.png'} width={700} height={1000} alt="Client Icon" className="w-full h-full max-w-screen-xl max-h-[90vh]" />
+          <Image src={imageSrc} width={1366} height={768} alt="Client Icon" className="w-full h-full max-w-screen-xl max-h-[100vh]" />
+        </div>
+        <div className="flex w-full h-6 bg-black">
+
         </div>
         <div className="w-full h-auto bg-transparent flex flex-col items-center">
           <div className="flex flex-col items-center gap-10 md:gap-20 w-full h-auto pt-10 md:pt-20">

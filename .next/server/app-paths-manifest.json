@@ -1,15 +1,7 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
-  "/exercicios/page": "app/exercicios/page.js",
-  "/cards/videos/[videoid]/page": "app/cards/videos/[videoid]/page.js",
-  "/gym/page": "app/gym/page.js",
-  "/cards/page": "app/cards/page.js",
-  "/gym/videos/[videoid]/page": "app/gym/videos/[videoid]/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/inicio/page": "app/inicio/page.js",
   "/page": "app/page.js",
-  "/lista/page": "app/lista/page.js",
   "/tabela/page": "app/tabela/page.js",
   "/receita/page": "app/receita/page.js",
-  "/receita/receitaAtual/[receitaAtualId]/page": "app/receita/receitaAtual/[receitaAtualId]/page.js"
+  "/inicio/page": "app/inicio/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js"
 }

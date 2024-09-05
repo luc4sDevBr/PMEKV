@@ -31,7 +31,8 @@ const config: Config = {
         'NewPalet-green-blur-0': '#9aa89c',
         'NewPalet-green-blur-1': '#738c6d',
         'NewPalet-green-blur-2': '#879064',
-        'NewPalet-yellow': '#d9c49c'
+        'NewPalet-yellow': '#d9c49c',
+        'NewPalet-jeans': '#455158'
       },
       gradientColorStops:{
         'Mevkgreen': '#033136',
@@ -49,7 +50,8 @@ const config: Config = {
         'NewPalet-green-blur-0': '#9aa89c',
         'NewPalet-green-blur-1': '#738c6d',
         'NewPalet-green-blur-2': '#879064',
-        'NewPalet-yellow': '#d9c49c'
+        'NewPalet-yellow': '#d9c49c',
+        'NewPalet-jeans': '#455158'
         
       },
       backgroundColor:{
@@ -68,7 +70,8 @@ const config: Config = {
         'NewPalet-green-blur-0': '#9aa89c',
         'NewPalet-green-blur-1': '#738c6d',
         'NewPalet-green-blur-2': '#879064',
-        'NewPalet-yellow': '#d9c49c'
+        'NewPalet-yellow': '#d9c49c',
+        'NewPalet-jeans': '#455158'
       },
       boxShadow: {
         sm: '0 1px 2px 0 rgba(0, 0, 0, 0.05)',
