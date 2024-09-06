@@ -29,7 +29,7 @@ export default function BuildList() {
     },
     {
       key: "5",
-      label: "Exercício-se",
+      label: "Exercíte-se",
       link: "/exercicios"
     }
   ];
