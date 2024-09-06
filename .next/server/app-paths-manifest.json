@@ -1,7 +1,4 @@
 {
-  "/exercicios/page": "app/exercicios/page.js",
-  "/cards/page": "app/cards/page.js",
-  "/cards/videos/[videoid]/page": "app/cards/videos/[videoid]/page.js",
-  "/gym/page": "app/gym/page.js",
-  "/page": "app/page.js"
+  "/page": "app/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js"
 }

@@ -10,46 +10,6 @@
       "static/chunks/main-app.js",
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
-    ],
-    "/receita/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/receita/page.js"
-    ],
-    "/receita/receitaAtual/[receitaAtualId]/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/receita/receitaAtual/[receitaAtualId]/page.js"
-    ],
-    "/inicio/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/inicio/page.js"
-    ],
-    "/tabela/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/tabela/page.js"
-    ],
-    "/exercicios/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/exercicios/page.js"
-    ],
-    "/cards/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/cards/page.js"
-    ],
-    "/cards/videos/[videoid]/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/cards/videos/[videoid]/page.js"
-    ],
-    "/gym/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/gym/page.js"
     ]
   }
 }
