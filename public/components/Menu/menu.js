@@ -27,7 +27,8 @@ const BuildMenu = ({ active, boolactive }) => {
             <footer className="w-full h-32 gap-1 bg-transparent items-center text-center flex justify-center ">
             <   Link className=" transition duration-700 ease-in-out rounded-3xl shadow-lg text-center  items-center flex justify-center transform hover:-translate-y-1 hover:scale-10" href={"https://www.instagram.com/drkitaro?igsh=NXd2eDZ2YzlqMm5q"}>
                     <Instagram className="drop-shadow-lg" color="#e5e9cc"/>
-                    <small className=" w-auto text-default-500 text-Mevkligth truncate pl-1 ">@drkitaro</small>
+                    <small className=" w-auto text-default-500 text-Mevkligth truncate pl-1 ">@drkitaro</small><br></br>
+                    
                  </Link>   
             </footer>
         </div>

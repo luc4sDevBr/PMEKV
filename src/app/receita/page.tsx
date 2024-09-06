@@ -31,17 +31,9 @@ export default function Home() {
                 </div>
                 
                 {/* Footer */}
-                <footer className="bg-Mevkgreen w-full h-32 sm:h-52 text-center flex flex-col items-center justify-center drop-shadow-lg gap-2">
-                    <Image
-                        src='/4.png'
-                        width={50}
-                        height={50}
-                        alt="Client Icon"
-                        className="w-12 h-12 sm:w-20 sm:h-20"
-                    />
-                    <h1 className="text-2xl sm:text-4xl font-thin text-NewPalet-yellow">
-                        Desafio MEVK
-                    </h1>
+                <footer className="bg-Mevkgreen w-full h-52 text-center flex-col flex items-center justify-center drop-shadow-lg gap-2">
+                    <Image src='/4.png' width={70} height={70} alt="Client Icon" />
+                    <h1 className="drop-shadow-lg text-4xl font-thin text-NewPalet-yellow"> Desafio MEVK </h1>
                 </footer>
             </section>
         </main>
