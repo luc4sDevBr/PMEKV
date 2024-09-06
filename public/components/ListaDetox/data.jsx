@@ -13,7 +13,7 @@ export const users = [
     preview: "Ingredientes: 1 folha de couve | 1 maçã verde | Suco de 1 limão...",
     images: [
       {
-        src: '/cucoverde.jpg',
+        src: '/sucoverde.jpg',
         alt: 'Two each of gray, white, and black shirts laying flat.',
       },
       {
@@ -55,7 +55,7 @@ export const users = [
     preview: "Ingredientes: 1 xícara de morangos | 1/2 xícara de framboesas | 1/2 xícara de mirtilos...",
     images: [
       {
-        src: 'https://tailwindui.com/img/ecommerce-images/product-page-02-secondary-product-shot.jpg',
+        src: '/sucovermelho.jpg',
         alt: 'Two each of gray, white, and black shirts laying flat.',
       },
       {
@@ -95,7 +95,7 @@ export const users = [
     preview: "Ingredientes: 1 litro de água | 1 limão cortado em rodelas | 1/2 pepi...",
     images: [
       {
-        src: 'https://tailwindui.com/img/ecommerce-images/product-page-02-secondary-product-shot.jpg',
+        src: '/aguaverde.jpg',
         alt: 'Two each of gray, white, and black shirts laying flat.',
       },
       {
@@ -133,7 +133,7 @@ export const users = [
     preview: "Ingredientes: 1 xícara de quinoa cozida | 1 pepino picado | 1 de ...",
     images: [
       {
-        src: 'https://tailwindui.com/img/ecommerce-images/product-page-02-secondary-product-shot.jpg',
+        src: '/saladaverde.jpg',
         alt: 'Two each of gray, white, and black shirts laying flat.',
       },
       {
@@ -171,11 +171,11 @@ export const users = [
     team: "Sales",
     status: "active",
     age: "24",
-    avatar: "https://d2u8k2ocievbld.cloudfront.net/memojis/female/3.png",
+    avatar: "/chaverder.jpg",
     preview: "Ingredientes: 1 colher de sopa de hibisco seco | 1 pedaço pequeno de ...",
     images: [
       {
-        src: 'https://tailwindui.com/img/ecommerce-images/product-page-02-secondary-product-shot.jpg',
+        src: '/chaverder.jpg',
         alt: 'Two each of gray, white, and black shirts laying flat.',
       },
       {
@@ -209,12 +209,12 @@ export const users = [
     role: "P. Manager",
     team: "Management",
     age: "29",
-    avatar: "https://d2u8k2ocievbld.cloudfront.net/memojis/male/3.png",
+    avatar: "/sopaabobora.jpg",
     preview: "bIngredientes: 500g de abóbora cortada em cubos | 1 cenoura picada ..",
     status: "active",
     images: [
       {
-        src: 'https://tailwindui.com/img/ecommerce-images/product-page-02-secondary-product-shot.jpg',
+        src: '/sopaabobora.jpg',
         alt: 'Two each of gray, white, and black shirts laying flat.',
       },
       {

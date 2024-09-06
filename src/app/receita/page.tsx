@@ -9,24 +9,19 @@ export default function Home() {
     return (
         <main className="grid grid-rows-14 w-full h-screen overflow-hidden">
             {/* Header */}
-            <header className="row-span-1 px-2 bg-Mevkgreen flex items-center justify-between space-x-4 sm:space-x-6 shadow-lg">
-                <menu className="flex-1 flex">
+            <header className="row-span-1 h-[10vh] relative px-2 bg-Mevkgreen flex items-center space-x-5 shadow-lg">
+                <menu className="flex-2 flex items-center z-10">
                     <Button>
-                        <Link href="/">
-                            <ArrowLeft color="#dbbc65" />
-                        </Link>
+                        <Link href="/"><ArrowLeft color="#dbbc65" /></Link>
                     </Button>
                 </menu>
-                <div className="flex-1 flex justify-center">
-                    <Image
-                        src='/4.png'
-                        width={50}
-                        height={50}
-                        alt="Client Icon"
-                        className="max-w-full h-auto"
-                    />
+
+                {/* Centralizar a imagem */}
+                <div className="absolute inset-0 flex justify-center items-center">
+                    <Image src='/4.png' width={50} height={50} alt="Client Icon" className="max-w-full h-auto" />
                 </div>
-                <div className="flex-1"></div>
+
+                <div className="flex-2 flex z-10"></div>
             </header>
 
             {/* Main Content */}

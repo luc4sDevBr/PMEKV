@@ -49,7 +49,7 @@ export default function ListaDetoxWrapper() {
             className="w-full p-0 mt-2 sm:mt-3 transition duration-700 ease-in-out bg-transparent shadow-lg text-left transform hover:-translate-y-1 hover:scale-100"
           >
             <Link href={`/receita/receitaAtual/${item.id}`}>
-              <div className="flex w-full h-full rounded-lg items-center bg-gradient-to-tr from-Mevk-darkgreen via-Mevkgreen to-emerald-50 p-1 sm:p-3 gap-3 sm:gap-5">
+              <div className="flex w-full h-full rounded-xl items-center bg-gradient-to-tr from-Mevk-darkgreen via-Mevkgreen to-emerald-50 p-1 sm:p-3 gap-3 sm:gap-5">
                 <Avatar
                   alt={item.name}
                   className="flex-shrink-0 rounded-full w-20"
