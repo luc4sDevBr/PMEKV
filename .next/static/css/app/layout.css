@@ -586,32 +586,17 @@ video {
 .inset-0 {
   inset: 0px;
 }
-.left-0 {
-  left: 0px;
-}
-.top-0 {
-  top: 0px;
-}
 .z-10 {
   z-index: 10;
+}
+.z-30 {
+  z-index: 30;
 }
 .z-40 {
   z-index: 40;
 }
 .z-50 {
   z-index: 50;
-}
-.z-0 {
-  z-index: 0;
-}
-.z-\[\] {
-  z-index: ;
-}
-.z-\[51\] {
-  z-index: 51;
-}
-.z-30 {
-  z-index: 30;
 }
 .row-span-1 {
   grid-row: span 1 / span 1;
@@ -1103,9 +1088,6 @@ video {
 }
 .opacity-75 {
   opacity: 0.75;
-}
-.opacity-50 {
-  opacity: 0.5;
 }
 .shadow-2xl {
   --tw-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
